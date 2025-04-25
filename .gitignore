@@ -5,7 +5,7 @@
 !/backend
 !/database
 !/frontend
-!/README
+!/README.md
 !/LICENSE
 
 # e não esquece de versionar o próprio .gitignore
