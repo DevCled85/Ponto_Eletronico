@@ -1,0 +1,116 @@
+.boxContainer {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+
+    & .boxBancoHoras {
+        min-width: 400px;
+        border-radius: 10px;
+        overflow: hidden;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgb(190, 238, 139);
+
+        & .header {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: rgb(9, 118, 9);
+            color: rgb(178, 252, 178);
+            font-weight: 600;
+            position: relative;
+
+            & button {
+                background-color: red;
+                border: 0;
+                width: 35px;
+                height: 35px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 5px;
+                color: #fff;
+                cursor: pointer;
+                position: absolute;
+                top: 0;
+                right: 0;
+                opacity: 0.8;
+                transition: all 0.3s ease;
+                font-size: 1.5rem;
+                font-weight: 500;
+            }
+            & button:hover {
+                opacity: 1;
+                transform: scale(1.1);
+            }
+        }
+
+        & .main {
+            width: 100%;
+            padding: 20px;
+            background-color: greenyellow;
+
+            & table {
+                background-color: #fff;
+                width: 100%;
+                border-collapse: collapse;
+                font-size: .75rem;
+                font-weight: 400;
+                border-radius: 10px;
+                overflow: hidden;
+
+                & thead {
+                    background-color: rgb(9, 118, 9);
+                    color: #fff;
+
+                    & th {
+                        padding: 10px 20px;
+                        text-align: left;
+                    }
+                }
+
+                & tbody {
+                    & tr {
+                        border-bottom: 1px solid rgba(9, 118, 9, 0.5);
+                        color: rgb(4, 78, 4);
+                        transition: all 0.3s ease;
+                        cursor: pointer;
+                        text-transform: capitalize;
+
+                        &:hover {
+                            background-color: rgba(9, 118, 9, 0.1);
+                            transform: scale(1.07);
+                            overflow: unset;
+                        }
+
+                        & td {
+                            padding: 15px 20px;
+                            text-align: left;
+                        }
+
+                        & td:nth-child(1) {
+                            min-width: 110px;
+                            font-weight: 600;
+                        }
+
+                        & td:nth-child(2) {
+                            text-align: center;
+                        }
+
+                        & td:last-child {
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

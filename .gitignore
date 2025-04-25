@@ -1,0 +1,10 @@
+# ignora tudo
+/*
+
+# mas não ignora (mode 644)
+!/backend
+!/database
+!/frontend
+
+# e não esquece de versionar o próprio .gitignore
+!/.gitignore

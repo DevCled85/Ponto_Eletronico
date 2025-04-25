@@ -1,0 +1,62 @@
+.boxPonto {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    & .ponto {
+        width: 100%;
+        height: 500px;
+        border-radius: 10px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        box-shadow: 0 4px 4px #7e8905;
+        background-color: #242424;
+
+        & h1 {
+            color: #fff;
+        }
+
+        & span {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            text-transform: capitalize;
+            gap: 5px;
+            color: #a7a7a7;
+
+            & input {
+                width: 300px;
+                height: 60px;
+                border-radius: 5px;
+                border: 0;
+                padding: 0 8px;
+                font-size: xx-large;
+                text-align: center;
+                font-weight: bold;
+                color: #242424;
+            }
+        }
+
+        & button {
+            width: 300px;
+            height: 60px;
+            border: 0;
+            border-radius: 5px;
+            font-size: large;
+            text-transform: capitalize;
+            font-weight: 500;
+            color: #242424;
+            background-color: aqua;
+        }
+
+        & button:hover {
+            opacity: .9;
+        }
+    }
+}

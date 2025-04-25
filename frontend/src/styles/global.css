@@ -1,0 +1,21 @@
+:root {
+    --primary-color: #724EDF;
+    --secondary-color: #242424;
+    --success-color: #35CE75;
+    --warning-color: #fbff04;
+    --error-color: #ff4444;
+    --text-color: #242424;
+    --background-color: #efefef;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+} 

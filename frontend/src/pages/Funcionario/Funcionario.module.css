@@ -1,0 +1,152 @@
+.boxCadFuncionario {
+    width: 100%;
+    /* height: 100vh !; */
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+
+    & form {
+        width: 350px;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        overflow: hidden;
+        background-color: #d9d9d9;
+        box-shadow: 0 4px 4px #e4e4e4;
+
+        & .header {
+            width: 100%;
+            height: 60px;
+            background-color: #09941e;
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            color: #fff;
+            font-weight: bold;
+            text-transform: capitalize;
+        }
+
+        & .main {
+            width: 100%;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            & label {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                text-align: left;
+                font-size: 13px;
+                
+                & input {
+                    width: 100%;
+                    height: 36px;
+                    border-radius: 5px;
+                    border: 0;
+                    padding: 0 8px;
+                }
+            }
+
+            & button {
+                width: 100%;
+                height: 56px;
+                border: 0;
+                border-radius: 5px;
+                background-color: #161073;
+                opacity: .25;
+                color: #fff;
+                font-size: 18px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+section.contBoxFuncionario {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    justify-content: center;
+    padding: 27px 0px;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.boxTableFuncionarios {
+    width: 100%;
+    max-width: 450px;
+    max-height: 770px;
+    overflow-y: auto;
+    background-color: #f3f3f3;
+    
+    & table {
+        border-collapse: collapse;
+        width: 100%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        overflow: hidden;
+        background-color: antiquewhite;
+        
+        & thead {
+            border: 1px solid #242424;
+            background-color: #242424;
+            color: #d1d1d1;
+            text-transform: uppercase;
+            font-size: 14px;
+        }
+
+        & th, td {
+            padding: 10px 15px;
+            text-align: left;
+            text-transform: capitalize;
+            font-size: 12px;
+        }
+
+        & tbody tr:nth-child(even) {
+            background-color: #383838;
+            color: #d1d1d1;
+        }
+
+        & td:nth-of-type(1) {
+            width: 300px;
+        }
+
+        & td:last-child {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 10px;
+            justify-content: space-around;
+            border: 0;
+        }
+
+        & tbody tr td button {
+            width: 50px;
+            padding: 5px;
+            border: 0;
+            border-radius: 5px;
+            font-size: 12px;
+            cursor: pointer;
+        }
+        & tbody tr td button:hover {
+            opacity: .9;
+        }
+
+        & button.btnEdit {
+            background-color: yellow;
+        }
+
+        & button.btnDelete {
+            background-color: red;
+            color: #fff;
+        }
+    }
+}

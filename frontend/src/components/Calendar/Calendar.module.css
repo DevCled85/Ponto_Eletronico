@@ -1,0 +1,99 @@
+.calendarContainer {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    min-width: 300px;
+    margin: 20px auto;
+    background-color: #2f2f2f;
+    border-radius: 5px;
+    overflow: hidden;
+    border: 10px solid #242424;
+}
+
+.day {
+    /* padding: 20px; */
+    width: 60px;
+    aspect-ratio: 1/1;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid #ccc; */
+    /* border-radius: 5px; */
+    font-size: .75rem;
+    color: #fff;
+    cursor: pointer;
+    font-weight: normal;
+}
+
+.day:hover {
+    background-color: #3f3f3f;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: aquamarine;
+}
+
+.faded {
+    width: 60px;
+    aspect-ratio: 1/1;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #484848;
+    font-weight: normal;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.header {
+    font-weight: bold;
+    background-color: #242424;
+    color: #fff;
+    padding: 10px;
+    font-size: .65rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-bottom: 1px solid #484848;
+    box-shadow: 0 1px 0 #484848;
+}
+
+.today {
+    border-radius: 5px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-color: aquamarine;
+    color: #242424;
+}
+.today::before {
+    content: 'Hoje';
+    font-size: .7rem;
+    position: absolute;
+    top: 5px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.selectedDate {
+    /* background-color: #3f3f3f !important; */
+    /* color: aquamarine !important; */
+    background-color: red !important;
+}

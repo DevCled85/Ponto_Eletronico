@@ -1,0 +1,246 @@
+.boxContaninerGerenciar {
+    background-color: #efefef;
+    width: 100%;
+    /* min-height: 100vh; */
+    height: max-content;
+}
+
+.container_gerenciar {
+    width: calc(100vw - 45px);
+    max-width: 1200px;
+    height: auto;
+    min-height: calc(100vh - 125px);
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+    gap: 10px;
+    margin: 0 auto;
+
+    & .dataAgora{
+        font-size: 12px;
+        padding: 10px;
+        color: #724EDF;
+        background-color: rgba(114, 78, 223, 0.1);
+        text-align: center;
+    }
+
+    & .containerTable {
+        width: 100%;
+        height: 100%;
+        padding: 10px 0;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 20px;
+        
+        & .boxTable {
+            width: fit-content;
+            height: 100%;
+            margin-bottom: 50px;
+
+            & .tableOff {
+                width: 100%;
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+                box-shadow: 0 4px 40px #afafaf;
+                overflow: hidden;
+
+                & table {
+                    width: 100%;
+                    border-collapse: collapse;
+                    font-size: 12px;
+                    text-transform: capitalize;
+                    background-color: #e8e8e8;
+                    border: 0;
+                    text-align: center;
+
+                    & thead {
+                        width: 100%;
+                        height: 40px;
+                        background-color: #fff;
+                        text-align: center;
+                        color: #242424;
+
+                        & th {
+                            width: 110px;
+                            border: 0;
+                            font-size: 10px;
+                        }
+                    }
+                    
+                    & tbody {
+                        width: 100%;
+                        font-size: 11px;
+                        
+                        & td {
+                            border-right: 1px solid #fff;
+                            height: 40px;
+                            font-family: Verdana, Geneva, Tahoma, sans-serif;
+                        }
+                        & td:nth-last-child(1) {
+                            border-right: 0;
+                            background-color: #c8c8c8;
+                        }
+                        & td:nth-child(7) {
+                            background-color: #c8c8c8;
+                        }
+                        
+                        & td:nth-child(2) {
+                            width: 140px;
+                            font-size: 10px;
+                        }
+
+                        & tr:hover {
+                            background-color: #724EDF;
+                            color: #fff;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+        
+        & .boxInfos {
+            min-width: 180px; /**/
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+    }
+
+    & .headerBoxCont {
+        width: 100%;
+        background-color: #724EDF;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        padding: 10px 20px;
+        font-size: 13px;
+        color: #fff;
+        text-transform: capitalize;
+
+        & div {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: #fff;
+
+            & div:nth-child(1) {
+                width: fit-content;
+                height: 100%;
+                font-size: 13px;
+                font-weight: normal;
+                display: flex;
+                flex-wrap: wrap;
+
+                & i {
+                    margin-right: 5px;
+                }
+
+                & input {
+                    width: 220px;
+                    height: 30px;
+                    border-radius: 4px;
+                    border: 0;
+                    outline: none;
+                    padding: 0 12px;
+                }
+            }
+
+            & div:nth-child(2) {
+                width: fit-content;
+                height: 100%;
+                font-size: 13px;
+                display: flex;
+                justify-content: flex-end;
+                flex-wrap: wrap;
+                font-weight: normal;
+
+                & span {
+                    display: flex;
+                    gap: 5px;
+                    margin: 0 10px;
+                }
+            }
+        }
+    }
+
+    & .bottomBoxCont{
+        width: 100%;
+        height: 40px;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #724EDF;
+    }
+}
+
+.boxInput_ {
+    position: relative;
+    /* width: 100% !important; */
+    /* height: 200px !important; */
+    background-color: #724EDF;
+}
+
+.resultSearch {
+    width: fit-content !important;
+    height: fit-content !important;
+    position: absolute;
+    top: 28px;
+    left: 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #ffffff;
+    border-bottom: 5px solid #724EDF;
+    box-shadow: 0 4px 4px #c4c4c4;
+    overflow: hidden;
+    color: #242424 !important;
+    padding: 10px;
+    
+    & table {
+        border-collapse: collapse;
+        width: max-content;
+
+        & thead {
+            border-color: transparent;
+
+            & th {
+                text-align: left;
+                font-size: 10px;
+                padding: 5px 5px;
+            }
+        }
+
+        & tbody {
+            width: 100%;
+            
+            & td {
+                border: 1px solid #724EDF;
+                padding: 10px;
+            }
+
+            & tr:hover {
+                background-color: #724EDF;
+                color: #ffffff;
+                padding: 10px;
+                cursor: pointer;
+                
+                & td {
+                    border: 1px solid #fff;
+                }
+            }
+        }
+    }
+}

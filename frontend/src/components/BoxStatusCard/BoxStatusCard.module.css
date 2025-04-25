@@ -1,0 +1,105 @@
+.box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-block: 20px;
+
+    & .spanBox {
+        width: 100%;
+        height: 90px;
+        border-radius: 10px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        background-color: aqua;
+
+        & .span_one {
+            width: 100%;
+            height: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-transform: capitalize;
+            border-radius: unset !important;
+        }
+
+        & .span_two {
+            width: 100%;
+            height: 50%;
+            text-align: center;
+            font-weight: 500;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #97FC97;
+        } 
+    }
+}
+
+.spanBox_trabalhando {
+    background-color: #97FC97 !important;
+    border: 2px solid #125B12 !important;
+
+    & .span_one {
+        background-color: #125B12 !important;
+        color: #97FC97 !important;
+    }
+
+    & .span_two {
+        color: #125B12 !important;
+        font-weight: 600 !important;
+        font-size: 18px !important;
+    }
+}
+
+.spanBox_intervalo {
+    background-color: #fbfba7 !important;
+    border: 2px solid #787814 !important    ;
+
+    & .span_one {
+        background-color: #787814 !important;
+        color: #fbfba7 !important;
+    }
+
+    & .span_two {
+        color: #787814 !important;
+        font-weight: 600 !important;
+        font-size: 18px !important;
+    }
+}
+
+.spanBox_foraExpediente {
+    background-color: #eaeaea !important;
+    border: 2px solid #242424 !important;
+
+    & .span_one {
+        background-color: #242424 !important;
+        color: #eaeaea !important;
+    }
+
+    & .span_two {
+        color: #242424 !important;
+        font-weight: 600 !important;
+        font-size: 18px !important;
+    }
+}
+
+.spanBox_ausente {
+    background-color: #f79494 !important;
+    border: 2px solid #4a0303 !important;
+
+    & .span_one {
+        background-color: #4a0303 !important;
+        color: #f79494 !important;
+    }
+
+    & .span_two {
+        color: #4a0303 !important;
+        font-weight: 600 !important;
+        font-size: 18px !important;
+    }
+}
